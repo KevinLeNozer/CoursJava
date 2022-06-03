@@ -1,6 +1,14 @@
 package fr.diginamic.banque.entites;
 
 public class Compte {
+    @Override
+    public String toString() {
+        return "Compte{" +
+                "numeroCompte=" + numeroCompte +
+                ", soldeCompte=" + soldeCompte +
+                '}';
+    }
+
     public int numeroCompte;
     public int soldeCompte;
 
