@@ -7,10 +7,9 @@ public class ConversionNombre {
         int resultat = Integer.parseInt(chaine);
         System.out.println("Le résultat est  : " + resultat);
 
-        int a = 12;
-        int b = 5;
+        int a = 12, b = 5;
 
-        int resultat2 = Integer.max(a,b);
-        System.out.println(resultat2);
+
+        System.out.println(Integer.max(a,b));
     }
 }
