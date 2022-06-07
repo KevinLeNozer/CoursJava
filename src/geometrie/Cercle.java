@@ -9,10 +9,10 @@ public class Cercle implements ObjetGeometrique {
 
     @Override
     public double perimetre() {
-        return 2 * Math.PI * rayon;
+        return 2 * rayon * Math.PI;
     }
     @Override
     public double surface() {
-        return (rayon * rayon) * Math.PI;
+        return Math.pow(rayon, 2) * Math.PI;
     }
 }
