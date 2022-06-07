@@ -2,12 +2,18 @@
 'https://plantuml.com/class-diagram
 
 abstract class Operation {
-    -dateOperation
-    -montantOperation
+    *dateOperation
+    *montantOperation
+    +Operation(Date date, int montantOperation
+    +abstract getType(): String
 }
 
-class Credit extends Operation
-class Debit extends Operation
+class Credit extends Operation {
+    +getType(): String
+ }
+class Debit extends Operation {
+    +getType(): String
+}
 
 
 

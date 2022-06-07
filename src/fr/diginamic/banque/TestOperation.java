@@ -14,7 +14,6 @@ public class TestOperation {
         operations[2]  = new Debit("21-01-2012", 2500);
         operations[3]  = new Debit("10-08-2013", 400);
 
-
         int totalOperation = 0;
         for (Operation showOpe : operations) {
             if (showOpe.getType() == "DEBIT") {
