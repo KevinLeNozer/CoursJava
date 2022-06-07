@@ -1,16 +1,21 @@
 package fr.diginamic.banque.entites;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CompteDaoMem implements CompteDao {
-    int[] tableauDesComptes;
+    //DAO => DataAccessObject Mem => Memoire
+
+     List<Compte> comptes = new ArrayList<>();
 
     @Override
-    public Compte[] lister() {
-        return new Compte[0];
+    public List<Compte> lister() {
+        return comptes;
     }
 
     @Override
-    public void sauvegarder(Compte nvCompte) {
-
+    public void sauvegarder(Compte compte) {
+        comptes.add(compte);
     }
 
     @Override

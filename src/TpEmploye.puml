@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Personne {
+    +nom
+    +prenom
+    +numeroDeSecu
+}
+
+class Adresse {
+    +numeroDeRue
+    +rue
+    +codePostal
+    +ville
+}
+
+abstract class Employe extends Personne {
+    +matriculeEmploye
+}
+
+class Cadre extends Employe{
+
+}
+
+class Technicien extends Employe{
+
+}
+
+class Commercial extends Employe{
+
+}
+
+interface CaclulSalaire {
+
+}
+
+@enduml
