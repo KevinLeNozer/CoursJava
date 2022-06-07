@@ -8,7 +8,6 @@ public class Compte {
                 ", soldeCompte=" + soldeCompte +
                 '}';
     }
-
     public int numeroCompte;
     public int soldeCompte;
 
