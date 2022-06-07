@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Operation {
+    -dateOperation
+    -montantOperation
+}
+
+class Credit extends Operation
+class Debit extends Operation
+
+
+
+@enduml
