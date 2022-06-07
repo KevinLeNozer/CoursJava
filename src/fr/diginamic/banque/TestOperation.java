@@ -9,20 +9,21 @@ public class TestOperation {
     public static void main(String[] args) {
         Operation operations[] = new Operation[4];
 
-        operations[0]  = new Credit("16-10-2010", 1800);
+        operations[0]  = new Credit("16-10-2010", 200);
         operations[1]  = new Credit("05-06-2011", 100);
-        operations[2]  = new Debit("21-01-2012", 2500);
+        operations[2]  = new Debit("21-01-2012", 300);
         operations[3]  = new Debit("10-08-2013", 400);
 
         int totalOperation = 0;
         for (Operation showOpe : operations) {
-            if (showOpe.getType() == "DEBIT") {
+            if (showOpe.getType().equals("CREDIT")) {
                 totalOperation += showOpe.getMontantOperation();
-            } else {
+            } else if (showOpe.getType().equals("DEBIT")) {
                 totalOperation -= showOpe.getMontantOperation();
             }
             System.out.println(showOpe + " " +showOpe.getType());
-            System.out.println(totalOperation);
         }
+
+        System.out.println("Montant des opérations : " + totalOperation);
     }
 }

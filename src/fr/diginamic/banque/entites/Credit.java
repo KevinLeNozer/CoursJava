@@ -8,6 +8,6 @@ public class Credit extends Operation {
 
     @Override
     public String getType() {
-        return "DEBIT";
+        return "CREDIT";
     }
 }

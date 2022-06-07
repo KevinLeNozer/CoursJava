@@ -8,7 +8,7 @@ public class Debit extends Operation{
 
     @Override
     public String getType() {
-        return "CREDIT";
+        return "DEBIT";
     }
 
 }
