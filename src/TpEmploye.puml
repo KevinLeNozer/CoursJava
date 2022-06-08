@@ -1,7 +1,7 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class Personne {
+abstract class Personne extends Adresse {
     +nom
     +prenom
     +numeroDeSecu
@@ -28,6 +28,16 @@ class Technicien extends Employe{
 
 class Commercial extends Employe{
 
+}
+
+class CoordonneeContactPerso extends Personne{
+    +numeroTel
+    +mail
+}
+
+class CoordonneeContactPro extends CoordonneeContactPerso {
+    +service
+    +adresseEntreprise
 }
 
 interface CaclulSalaire {

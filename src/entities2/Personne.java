@@ -1,6 +1,5 @@
 package entities2;
 
-import TPSalaire.Adresse;
 import entities.AdressePostale;
 
 public class Personne {
