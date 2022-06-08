@@ -7,8 +7,7 @@ import java.util.List;
 
 public class TestListeInt {
     public static void main(String[] args) {
-        ArrayList<Integer> listeEntier = new ArrayList<>(List.of(new Integer[]{-1, 5, 7, 3, -2,
-        4, 8, 5}));
+        ArrayList<Integer> listeEntier = new ArrayList<>(List.of(new Integer[]{-1, 5, 7, 3, -2, 4, 8, 5}));
         //Affichez tous les éléments de la liste
         System.out.println(listeEntier);
         //Affichez la taille de la liste
