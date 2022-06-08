@@ -23,6 +23,14 @@ public class TestListeInt {
         }
         //Affiche le résultat de la suppression ci-dessus
         System.out.println(listeEntier);
+        //Modifie le negatif en positif
+        for(Integer nbr : listeEntier) {
+            if (nbr < 0) {
+                listeEntier.set(listeEntier.indexOf(nbr), Math.abs(nbr));
+            }
+        }
+        //Affichage de la liste modifié
+        System.out.println(listeEntier);
 
     }
 }
