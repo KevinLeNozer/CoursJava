@@ -29,12 +29,5 @@ public class mapVilles {
         }
 
         System.out.println(mapVilles.size());
-
-        
-
-
-
-
-
     }
 }
