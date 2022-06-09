@@ -14,9 +14,9 @@ import java.util.List;
 
 public class ManipulationFichier {
     public static void main(String[] args) throws IOException {
-        //Path path = Paths.get("C:/Temp/recensement.csv");
-        //Path pathDestination = Paths.get("C:/Temp/recensementNew.csv");
-        //Files.copy(path, pathDestination);
+        /*Path path = Paths.get("C:/Temp/recensement.csv");
+        Path pathDestination = Paths.get("C:/Temp/recensementNew.csv");
+        Files.copy(path, pathDestination);
 
         boolean estFichier = Files.isRegularFile(path);
         boolean estLisible = Files.isReadable(path);
@@ -28,7 +28,7 @@ public class ManipulationFichier {
         System.out.println(path.getParent());
         System.out.println(path.getFileName());
 
-        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8 );
+        /*List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8 );
         List<String> outputLines = new ArrayList<>();
         //System.out.println(lines);
 
@@ -52,6 +52,6 @@ public class ManipulationFichier {
                 }
             }
         }
-        Files.write(pathDestination, outputLines);
+        Files.write(pathDestination, outputLines);*/
     }
 }
