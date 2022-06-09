@@ -1,5 +1,6 @@
 package maps;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -14,7 +15,6 @@ public class mapVilles {
         mapVilles.put(59, "Lille");
         mapVilles.put(33, "Bordeaux");
         mapVilles.put(69, "Lyon");
-
 
         Iterator<Integer> keysIte = mapVilles.keySet().iterator();
         while (keysIte.hasNext()) {
