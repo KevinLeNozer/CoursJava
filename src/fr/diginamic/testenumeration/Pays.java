@@ -1,17 +1,18 @@
-package sets;
+package fr.diginamic.testenumeration;
 
 public class Pays {
     protected String nom;
     protected Double nbrHabitant;
     protected int pibHabitant;
 
-    public Pays(String nom, Double nbrHabitant, int pibHabitant) {
-        super();
+    private Continent continent;
+
+    public Pays(String nom, Double nbrHabitant, int pibHabitant, Continent continent) {
         this.nom = nom;
         this.nbrHabitant = nbrHabitant;
         this.pibHabitant = pibHabitant;
+        this.continent = continent;
     }
-
 
     public String getNom() {
         return nom;
@@ -35,5 +36,23 @@ public class Pays {
 
     public void setPibHabitant(int pibHabitant) {
         this.pibHabitant = pibHabitant;
+    }
+
+    public Continent getContinent() {
+        return continent;
+    }
+
+    public void setContinent(Continent continent) {
+        this.continent = continent;
+    }
+
+    @Override
+    public String toString() {
+        return "Pays{" +
+                "nom='" + nom + '\'' +
+                ", nbrHabitant=" + nbrHabitant +
+                ", pibHabitant=" + pibHabitant +
+                ", continent=" + continent +
+                '}';
     }
 }

@@ -1,5 +1,7 @@
 package sets;
 
+/*import fr.diginamic.testenumeration.Pays;
+
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -34,5 +36,5 @@ public class TestSetDouble {
         listPays.add(new Pays("Chine", 1448470.00, 55805));
         listPays.add(new Pays("Russie", 145806.00, 55805));
         listPays.add(new Pays("Inde", 1406632.00, 55805));
-    }
-}
+  }
+}*/

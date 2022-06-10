@@ -9,6 +9,5 @@ public class AppString {
         //boolean result1 = paris == pariss;
 
         System.out.println(result);
-
     }
 }
